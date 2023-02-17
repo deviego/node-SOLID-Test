@@ -6,8 +6,8 @@ describe("Create Appointment", () => {
   it("shuld be able to create appointment", () => {
     const startAt = new Date();
     const endsAt = new Date();
-
-    endsAt.setDate(endsAt.getDate() + 1);
+    startAt.setDate(startAt.getDate() + 1);
+    endsAt.setDate(endsAt.getDate() + 2);
 
     const sut = new CreateAppointment();
 
